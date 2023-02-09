@@ -39,7 +39,8 @@ class Api_Get_Image(point: Int) {
 
                 })
             }.start()
-        }else{
+        }if(id == 2){
+             else{
             Thread {
                 val client: OkHttpClient = OkHttpClient.Builder().build()
                 val request: okhttp3.Request = okhttp3.Request.Builder()
@@ -70,6 +71,9 @@ class Api_Get_Image(point: Int) {
 
                 })
             }.start()
+        }
+        
+        
         }
 
     }
